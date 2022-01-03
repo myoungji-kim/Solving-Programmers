@@ -12,10 +12,10 @@ def solution(n):
 # 시간 복잡도 n ** 0.5
 def solution(n):
     answer = 0
-    for i in range(1,int(n**0.5)+1):
-        if n%i == 0:
-            if i != n//i:
-                answer += (i+n//i)
+    for i in range(1, int(n ** 0.5) + 1):
+        if n % i == 0:
+            if i != n // i:
+                answer += (i + n//i)
             else:
                 answer += i
     return answer
